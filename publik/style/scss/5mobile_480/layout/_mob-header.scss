@@ -1,0 +1,101 @@
+@media (max-width: 480px) {
+    /* верхнее меню */
+    .top-header {
+        position: absolute;
+        z-index: none;
+        width: 100%;
+        height: 50px;
+        /* border: 4px solid rgb(114, 204, 114); */
+        /* box-sizing: border-box; */
+        box-shadow: none;
+        &-content{
+            padding-top: 7px;
+            &-logocont{
+                a:nth-child(1){
+                    display: none;
+                }
+                a:nth-child(2){
+                    display: block;
+                }
+                &-logo {
+                    height: 35px;
+                    img{
+                        height: 99%;
+                    }
+                }
+            }
+            &-contacts-phone{
+                display: none;
+            }
+            &-contacts-socislLinks {
+                padding-left: 0;
+                display: flex;
+                align-items: center;
+                a {
+                    display: none;
+                }
+                a:nth-child(3){
+                    display: flex;
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+
+    /* боковое меню */
+    .main-header-menu {
+		position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 53px;
+        box-shadow: none;
+        border-radius: 0;
+        top: 50px;
+        &-wrp{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50px;
+            margin-top: 0;
+            align-items: flex-end;
+            a:nth-child(1){
+                display: none;
+            }
+            &-link{
+                display: flex;
+                width: 25%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 40%;
+                    height: 62%;
+                    margin-bottom: 0;
+                }
+                p{
+                    display: none;
+                }
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+                &:active {
+                    background: rgba(255, 255, 255, 0.1);
+                }
+                &:nth-child(1) {
+                    text-decoration: none;
+                    padding: 0 0 0 0;
+                    border-bottom: none;
+                    p{
+                        display: none;
+                    }
+                }
+                &:nth-child(n+2):nth-child(-n+5) {
+                    text-decoration: none;
+                    padding: 0 0 0 0;
+                    border-bottom: none;
+                }    
+            }
+        }
+    }
+}

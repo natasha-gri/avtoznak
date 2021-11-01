@@ -1,0 +1,46 @@
+/* Прижать футер 2 */
+footer {
+    height: 351px;
+    margin-top: -351px;
+}
+
+/* Прижать футер 3 */
+.clr {
+    height: 351px;
+}
+
+.footer-head {
+    padding-top: 20px;
+    padding-bottom: 65px;
+    background-color: rgb(151, 206, 194);
+    background-image: url('../../../img/footer-fon.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-attentionn {
+        display: flex;
+        flex-direction: column;
+        &-img {
+            width: 492px;
+            height: 350px;
+        }
+        &-icon {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        &-text {
+        }
+    }
+}
+
+.footer-main {
+    padding-top: 32px;
+    padding-bottom: 36px;
+    background-color: $blue;
+    &-content {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

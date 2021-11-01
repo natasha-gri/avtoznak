@@ -1,0 +1,45 @@
+.contacts{
+    @extend .section-padding-header;
+    @extend .section-padding-footer;
+    display: flex;
+    justify-content: space-between;
+    &-content{
+        min-width: 754px;
+        h2{
+            text-align: left;
+            margin-bottom: 94px;
+        }
+        &-cols{
+            display: flex;
+            &-col{
+                width: 377px;
+                &-item{
+                    display: flex;
+                    min-height: 118px;
+                    &-svg{
+                        width: 70px;
+                        height: 47px;
+                        svg{
+                            fill: $blue;
+                        }
+                    }
+                    &-text{
+                        position: relative;
+                        p{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-mapimg{
+        margin-top: 13px;
+        border-radius: 20px;
+        box-shadow: $box-shadow-container;
+    }
+}
+
+
+
+

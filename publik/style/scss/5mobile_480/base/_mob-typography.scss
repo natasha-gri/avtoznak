@@ -1,0 +1,139 @@
+@media (max-width: 480px) {
+/* =================Синий фон */
+/* Заголовок h1 */
+.cover-wrap-h1 {
+    font-size: 43px;
+    line-height: 1.09;
+    letter-spacing: 2.15px;
+}
+
+    /* Текст на видео */
+.video-text {
+    font-size: 23px;
+    line-height: 1.35;
+    letter-spacing: 1.15px;
+}
+
+/* Текст на обложке */
+.cover-wrap-content-text {
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: 0.85px;
+    color: $bg;
+    &:nth-child(n+4){
+        &::after {
+            width: 70px;
+            height: 2px;
+            top: 53px;
+        }
+    }
+    &::after {
+        width: 70px;
+        height: 2px;
+        top: 30px;
+    }
+}
+
+
+/* Все права */
+.rights{
+    font-size: 10px;
+    color: #ffffff75; 
+    span:nth-child(n+1){
+        font-size: 16px;
+    }
+    span:nth-child(3){
+        font-size: 10px;
+    }
+}
+    
+/* =================Синий шрифт */
+/* h2 */
+h2{
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+/* Оценитете */
+.actions{
+    font-size: 23px;
+    line-height: 1.65;
+    letter-spacing: 1.15px;
+}
+
+/* Имена клиентов и аккордеон */
+.customer-name-accordion {
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+}
+
+/* =================Красный шрифт */
+/* Цыфры */
+.numbers {
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+/* Текст над заголовком */
+.text-above-heading {
+    font-size: 22px;
+    line-height: 1.73;
+    letter-spacing: 1.1px;
+}
+
+
+/* =================Черный шрифт */
+/* Будте */
+.wish{
+    font-size: 27px;
+    line-height: 1.47;
+    letter-spacing: 0.75px;
+    span{
+        font-size: 38px;
+        letter-spacing: 0.95px;
+    }
+}
+
+/* Осн текст */
+.main-text {
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: 0.8px;
+    span {
+        font-size: 22px;
+        font-weight: bold;
+        padding-left: 11px;
+    }
+}
+
+.text-contact-line{
+    width: 69px;
+    margin-top: 4px;
+}
+
+/* Отзывы */
+.review-text{
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+/* Под цифрами */
+.under-numbers {
+    line-height: 1.19;
+    margin-bottom: 44px;
+}
+
+/* Должжность клиента */
+.client-work {
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.25px;
+}
+
+}

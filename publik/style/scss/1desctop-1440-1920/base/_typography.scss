@@ -1,0 +1,373 @@
+/* body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Play', sans-serif;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Play:wght@700&display=swap');
+
+.first-font {
+    font-family: 'Play', sans-serif;
+}
+
+.second-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* =================Синий фон */
+/* Заголовок h1 */
+.cover-wrap-h1 {
+    @extend .first-font;
+    font-size: 10vh;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    color: $bg;
+}
+
+/* Текст на видео */
+.video-text {
+    @extend .first-font;
+    font-size: 34px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: 1.7px;
+    text-align: center;
+    color: $bg;
+}
+
+/* Текст на обложке */
+.cover-wrap-content-text {
+    @extend .second-font;
+    display: block;
+    font-size: 3vh;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: $bg;
+    /* &::after {
+        content: "";
+        display: block;
+        width: 95px;
+        height: 1px;
+        background-color: #FF3D4B;
+        position: absolute;
+        top: 43px;
+    } */
+}
+
+/* Почему, подписи меню */
+.main-header-menu-wrp-link {
+    p {
+        @extend .second-font;
+        font-size: 21px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.19;
+        letter-spacing: 1.05px;
+        text-align: left;
+        color: $bg;
+    }
+}
+
+/* Кнопка вызова и чата */
+.button-txt {
+    @extend .second-font;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: 0.85px;
+    text-align: left;
+    color: $bg;
+}
+
+.main-header-button {
+    span{
+        @extend .second-font;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: 0.85px;
+        text-align: left;
+        color: $bg;
+    }
+}
+
+/* Все права */
+.rights {
+    @extend .second-font;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: $bg;
+}
+
+/* =================Синий шрифт */
+/* h2 */
+h2 {
+    @extend .first-font;
+    font-size: 44px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: 0.95px;
+    text-align: center;
+    color: $blue;
+    margin-bottom: 18px;/* отладка на странице почему мы */
+}
+
+/* номет тел */
+.phone-text-header {
+    @extend .second-font;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: 1.25px;
+    color: $blue
+}
+
+/* Оценитете */
+.actions {
+    @extend .second-font;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.72;
+    letter-spacing: 1.25px;
+    text-align: left;
+    color: $blue;
+}
+
+/* Имя комиссара */
+.name-com {
+    @extend .second-font;
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 0.53px;
+    text-align: center;
+    margin-bottom: 7px;
+    color: $blue;
+}
+
+/* Имена клиентов и аккордеон */
+.customer-name-accordion {
+    @extend .second-font;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 0.43px;
+    text-align: center;
+    margin-top: 15px;
+    color: $blue;
+}
+
+/* =================Красный шрифт */
+/* Цыфры */
+.numbers {
+    @extend .second-font;
+    font-size: 34px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 1.7px;
+    text-align: left;
+    color: $red;
+}
+
+/* Текст над заголовком */
+.text-above-heading {
+    @extend .second-font;
+    font-size: 25px;
+    margin-bottom: -5px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: $red;
+}
+
+/* =================Черный шрифт */
+/* Будте */
+.wish {
+    @extend .first-font;
+    font-size: 33px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: 0.83px;
+    text-align: center;
+    color: #000;
+    span {
+        font-size: 42px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: 1.05px;
+        text-align: center;
+        color: #003a8d;
+    }
+}
+
+/* Осн текст */
+.main-text {
+    @extend .second-font;
+    font-size: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: 0.95px;
+    text-align: center;
+    color: $text;
+}
+
+.text-contact-line{
+    width: 80px;
+    height: 2px;
+    margin-top: 8px;
+    background-color: $red;
+}
+
+/* Отзывы */
+.review-text {
+    @extend .second-font;
+    font-size: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.53;
+    letter-spacing: 0.95px;
+    text-align: left;
+    color: $text;
+}
+
+/* Подписи услуг */
+.services-items-col1-item > p, 
+.services-items-col1-itemreverce > p {
+    @extend .second-font;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 0.85px;
+    color: $text;
+}
+
+/* Под цифрами */
+.under-numbers {
+    @extend .second-font;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: $text2;
+}
+
+/* 6 лет */
+.com-wish {
+    @extend .second-font;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 0.35px;
+    text-align: center;
+    margin-bottom: 1px;
+    color: $lightgrey;
+    &::after {
+        content: "";
+        display: block;
+        width: 39px;
+        height: 1px;
+        background-color: #898989;
+        position: absolute;
+        top: 90px;
+        right: 89px;
+    }
+}
+
+/* Должность кома */
+.com-job {
+    @extend .second-font;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: 0.35px;
+    text-align: center;
+    margin-top: 20px;
+    color: $text2;
+}
+
+/* Должжность клиента */
+.client-work {
+    display: none;
+    @extend .second-font;
+    font-size: 11px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: 0.28px;
+    text-align: center;
+    margin-top: 8px;
+    color: $text2;
+}
+
+/* В форме */
+.form-txt {
+    @extend .second-font;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: 0.55px;
+    text-align: left;
+    color: #bababa;
+}
+
+/* Допы */

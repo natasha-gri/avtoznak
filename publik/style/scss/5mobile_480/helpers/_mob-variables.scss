@@ -1,0 +1,48 @@
+@media (max-width: 480px) {
+    
+.main-container{
+/*     border: 2px solid red;
+    box-sizing: border-box; */
+}
+
+/* центрирование основного блока контента */
+.container-header {
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid rgb(6, 155, 61);
+    box-sizing: border-box; */
+    /* background-color: rgba(0, 128, 0, 0.347); */
+}
+
+/* отступы для секции */
+.section-padding-mob {
+    padding-top: 53px;
+    padding-bottom: 35px;/* установлено по n блоку */
+}
+
+
+/* блок верстки */
+.section-block {
+    /* min-height: 200px; */
+    @extend .section-padding-mob;
+}
+
+/* отступы от хедера */
+.section-padding-header {
+    padding-top: 100px;
+}
+
+/* отступы от футера */
+.section-padding-footer {
+    padding-bottom: 60px;
+}
+
+/* end */
+}

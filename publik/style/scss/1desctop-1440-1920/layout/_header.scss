@@ -1,0 +1,104 @@
+/* Верхнее меню */
+.top-header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: $box-shadow-container;
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 27px;
+        &-logocont{
+            a:nth-child(1){
+                display: block;
+                display: flex;
+                justify-content: center;
+            }
+            a:nth-child(2){
+                display: none;
+            }
+            &-logo {
+                display: block;
+                height: 49px;
+            }
+        }
+        &-contacts {
+            display: flex;
+            align-items: center;
+            &-phone {
+                width: 290px;
+                height: 38px;
+                display: block;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                border-radius: 7px;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.149);
+                    box-shadow: 1px 3px 4px 0 #00000045;
+                }
+                &:active{
+                    background-color: rgba(76, 76, 76, 0.088);
+                    box-shadow: inset 1px 3px 4px 0 #00000035;
+                }
+                p {
+                    padding-left: 13px;
+                }
+            }
+        }
+    }
+}
+
+/* Боковое меню */
+.main-header-menu {
+    display: flex;
+    justify-content: center;
+    width: 10.2%;
+    height: 95vh;
+    box-shadow: $box-shadow-container;
+    background-color: $blue;
+    border-radius: 0 25px 25px 0;
+    position: fixed;
+    z-index: 10;
+    top: 18px;
+    left: 0;
+    &-wrp {
+        display: flex;
+        flex-direction: column;
+        width: 96%;
+        margin-top: 10px;
+        &-link {
+            display: block;
+            height: 13.4%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            border-radius: 16px;
+            &:nth-child(1) {
+                height: 9%;
+                text-decoration: none;
+                padding: 37px 20px 20px 20px;
+                p{
+                    display: none;
+                }
+            }
+            &:nth-child(n+2):nth-child(-n+5) {
+                text-decoration: none;
+                padding: 20px 2px 20px 2px;
+                
+            }  
+            &:hover {
+                background-color: #0c4ca9;
+                box-shadow: 1px 3px 4px 0 #00000045;
+            }
+            &:active {
+               background-color: #0044a6;
+                box-shadow: inset 1px 3px 4px 0 #00000047;
+            }  
+        }
+    }
+}

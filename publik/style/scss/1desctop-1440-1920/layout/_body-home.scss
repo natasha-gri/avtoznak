@@ -1,0 +1,351 @@
+/* 1-Обложка */
+.cover {
+    position: relative;
+    &-video {
+        display: block;
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #404b51;
+        background-image: url('https://avatars.mds.yandex.net/get-altay/4054675/2a0000017591a1fa036d0f1e881efffddab9/XXL');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-vd{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            position: absolute;
+            filter: brightness(0.6);
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            background: url(../../../img/pattern-grid.png);
+        }
+    }
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        padding-top: 0;
+        padding-left: 127px;
+        &-h1 {
+            position: relative;
+            margin-bottom: 31px;
+        }
+        &-content {
+            &-null{
+                width: 50px;
+                height: 3vh;
+                /* background-color: red; */
+                position: relative;
+                &:last-child{
+                    height: 0.1vh;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 95px;
+                    height: 2px;
+                    background-color: #FF3D4B;
+                    position: absolute;
+                    top: 5px;
+                }
+            }
+            &-text {
+                position: relative;
+            }
+        }
+    }
+}
+
+/*2-блок Наши комиссары */
+.worker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: $padding-bottom-section;
+    &-content{
+        width: 79%;
+    }
+}
+
+.worker-slider {
+    width: 100%;
+    padding-top: 50px;
+	position: relative;
+    &-wrapper{
+        overflow: hidden;
+        width: 1260px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-container {
+            overflow: hidden;
+            &-track {
+                display: flex;
+               /*  width: 1204px; */
+                margin: 0 auto;
+                transition: 0.5s;
+                margin-bottom: 15px;
+                &-item {
+                    min-height: 272px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        object-fit: cover;
+                        border-radius: 20px;
+                    }
+                    &-content{
+                        width: 221px;
+                        min-height: 171px;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: -58px;
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 20px;
+                        padding: 28px 0 20px 0;
+                        box-shadow: $box-shadow-container;
+
+                    }
+                }
+            }
+        }
+        &-btn-prev {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            top: 39%;
+            left: 0;
+            &::after{
+				cursor: pointer;
+                content: "";
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                border-top: 7px solid #0044a6;
+                border-right: 7px solid #0044a6;
+                transform: rotate(-135deg);
+            }
+        }
+        &-btn-next {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            top: 39%;
+            right: 30px;
+            &::before{
+				cursor: pointer;
+                content: "";
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                border-top: 7px solid #0044a6;
+                border-right: 7px solid #0044a6;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+/* 3-блок Отзывы */
+.reviews {
+    background-color: $bluelight;
+    background-image: url(/img/left-texture.png), url(/img/rigth-texture.png);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 40%, 40%;
+    padding: 75px 0 145px 0;
+    position: relative;
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-bulet {
+            position: relative;
+            display: flex;
+            width: 62%;
+            min-height: 178px;
+            padding: 44px 76px 27px 53.9px;
+            background-color: $bg;
+            border-radius: 20px;
+            margin-top: 17px;
+            margin-bottom: 54px;
+            box-shadow: $box-shadow-container;
+            &:before {
+                content: '';
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                left: 59%;
+                bottom: -13px;
+                background: $bg;
+                transform: rotate(45deg);
+                box-shadow: 3px 3px 4px 0px rgba(0,0,0,.2);
+            }
+            &-quotes {
+                margin-right: 50px;
+            }
+            &-content{
+                margin-top: -1px;
+            }
+        }
+    }
+
+    &-pagination {
+        position: absolute;
+        bottom: 80px;
+        &-circle {
+            display: block;
+            width: 9px;
+            height: 9px;
+            display: inline-block;
+            border: solid 1px #707070;
+            background-color: $bluelight;
+            border-radius: 50%;
+            margin: 5px;
+            &:hover {
+                background-color: #707070;
+            }
+            &-active {
+                background-color: #707070;
+            }
+        }
+    }
+}
+
+.reviews-content-boxclient {
+    display: flex;
+    justify-content: space-evenly;
+    width: 816px;
+    &-client {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-gradient{
+                margin-bottom: 13px;
+                background: #000;
+                background: linear-gradient(180deg, #000000 0%, #000000 25%, #1e539e 50%, $red 75%, $blue 100%);
+                background-size: 400% 400%;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                transition: .5s all;
+                border-radius: 10px;
+                &_img{
+                    width: 100px;
+                    height: 118px;
+                    background: #000 url(/img/avatar-null.png) no-repeat center center;
+                    background-size: cover;
+                    opacity: 0.8;
+                    mix-blend-mode: screen;
+                }
+                &:hover {
+                    background-position: 100% 100%;
+                }
+            }
+            &-content p:first-child{
+                word-wrap: break-word;
+                width: 100px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.person1 {
+    background: #000 url(/img/avatar-null.png) no-repeat center center;
+    background-size: cover;
+    opacity: 0.7;
+    mix-blend-mode: screen;
+}
+
+.person2 {
+    background: #000 url(/img/avatar-2.jpg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.7;
+    mix-blend-mode: screen;
+}
+
+.person3 {
+    background: #000 url(/img/avatar-3.jpg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.7;
+    mix-blend-mode: screen;
+}
+
+.person4 {
+    background: #000 url(/img/avatar-null.png) no-repeat center center;
+    background-size: cover;
+    opacity: 0.7;
+    mix-blend-mode: screen;
+}
+
+
+
+.bulet-text > p {
+    &:nth-child(1){
+        display: none;
+    }
+    &:nth-child(2){
+        display: none;
+    }
+    &:nth-child(3){
+        display: block;
+    }
+    &:nth-child(4){
+        display: none;
+    }
+}
+
+/* 4-блок Опыт */
+.practice {
+    display: flex;
+    padding-top: 77px;
+    padding-bottom: 38px;
+    &-img {
+        margin-top: 13px;
+    }
+    &-content {
+        h2 {
+            text-align: left;
+            margin-left: 100px;
+            margin-bottom: 52px;
+        }
+        &-blok {
+            display: flex;
+            &-col {
+                margin-left: 100px;
+                &-item {
+                    display: flex;
+                    min-height: 130px;
+                    &-svg{
+                        display: flex;
+                        align-items: center;
+                        width: 26%;
+                        height: 100px;
+                    }
+                    &-content {
+                        width: 74%;
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import '1desctop-1440-1920/base/reset';
+@import '1desctop-1440-1920/helpers/variables';
+@import '1desctop-1440-1920/base/typography';
+@import '1desctop-1440-1920/layout/header';
+@import '1desctop-1440-1920/layout/body-home';
+@import '1desctop-1440-1920/layout/body-questions';
+@import '1desctop-1440-1920/layout/body-services';
+@import '1desctop-1440-1920/layout/body-contacts';
+@import '1desctop-1440-1920/layout/footer';
+@import '1desctop-1440-1920/components/buttons';
+@import '1desctop-1440-1920/components/icons';
+
+/* mob-480 */
+@import '5mobile_480/helpers/mob-variables';
+@import '5mobile_480/base/mob-typography';
+@import '5mobile_480/components/mob-buttons';
+@import '5mobile_480/components/mob-icons';
+@import '5mobile_480/layout/mob-body-home';
+@import '5mobile_480/layout/mob-body-questions';
+@import '5mobile_480/layout/mob-body-services';
+@import '5mobile_480/layout/mob-body-contacts';
+@import '5mobile_480/layout/mob-header';
+@import '5mobile_480/layout/mob-footer';

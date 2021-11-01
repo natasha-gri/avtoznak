@@ -1,0 +1,74 @@
+$blue: #0044a6;
+$red: #ec1b29;
+$bluelight: #f7f7f7;
+$text: #272727;
+$text2: #5e5d5d;
+$lightgrey: #898989;
+$bg: #fff;
+
+$box-shadow-container: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+
+/* Прижать футер 1 */
+html,
+body {
+    height: 100%;
+}
+
+.main-container {
+    min-height: 100%;
+}
+
+/* центрирование основного блока контента */
+.container-header {
+    width: 72%;
+    margin-left: 14%;
+    margin-right: 14%;/* 
+    outline: 2px solid rgb(6, 155, 61);
+    box-sizing: border-box; */
+}
+
+.container {
+    width: 1420px;
+    margin: 0 auto;/* 
+    outline: 6px solid rgb(6, 155, 61);
+    box-sizing: border-box; */
+}
+
+/* отступы для секции */
+.section-padding {
+    padding-top: 75px;
+    padding-bottom: 25px; /* установлено по 2 блоку вопросов */
+}
+$padding-bottom-section: 75px; /* установлено по 2 блоку главной */
+$padding-bottom-section-mob: 53px; /* установлено по 2 блоку главной */
+
+/* блок верстки */
+.section-block {
+    min-height: 200px;
+    @extend .section-padding;
+}
+
+/* отступы от хедера */
+.section-padding-header {
+    padding-top: 175px;
+}
+
+/* отступы от футера */
+.section-padding-footer {
+    padding-bottom: 70px;
+}
+
+/* =============начальные блоки для схемы сайта*/
+.section-block-white {
+    min-height: 500px;
+    @extend .section-padding;
+    background-color: #fff;
+}
+
+.section-block-grey {
+    min-height: 500px;
+    @extend .section-padding;
+    background-color: rgb(187, 187, 187);
+}
+
+

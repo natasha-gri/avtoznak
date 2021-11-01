@@ -1,0 +1,204 @@
+@media (max-width: 480px) {
+
+    /* 1-Обложка */
+    .cover {
+        &-video {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url('/img/bg-img-mob.jpg');
+            &-vd{
+                display: none;
+            }
+        }
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 40px;
+            padding-left: 0;
+            &-h1 {
+                margin-bottom: 25px;
+                margin-top: -120px;
+            }
+            &-content {
+                &-null{
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 71px;
+                        height: 2px;
+                        background-color: #FF3D4B;
+                        position: absolute;
+                        top: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*2-блок Наши комиссары */
+    .worker {
+        padding-bottom: $padding-bottom-section-mob;
+    h2{
+        width: 250px;
+    }
+    &-content{
+        width: 100%;
+    }
+    }
+    .worker-slider {
+        padding-top: 27px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        &-wrapper{
+            width: 330px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-container {
+                &-track {
+                    /* width: 340px; */
+                    &-item {
+                        img{
+                            width: 73%;
+                            height: 70%;
+                        }
+                        &-content{
+                            width: 64%;
+                            min-height: 51%;
+                            margin-top: -66px;
+                        }
+                    }
+                }
+            }
+            &-btn-prev {
+                &::after{
+                    transform: rotate(225deg);
+                }
+            }
+            &-btn-next {
+                background-color: transparent;
+                border: none;
+                right: 30px;
+                &::before{
+                    transform: rotate(
+                        45deg);
+                }
+            }
+            
+        }
+    }
+
+    /* 3-блок Отзывы */
+    .reviews{
+        background-color: $bluelight;
+        background-image: url(/img/left-texture.png), url(/img/rigth-texture.png);
+        background-position: top left, bottom right;
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+        padding-top: 53px;
+        padding-bottom: 95px;
+        &-content {
+            &-bulet {
+                flex-direction: column;
+                align-items: center;
+                width: 96%;
+                min-height: 60px;
+                margin-top: 10px;
+                margin-bottom: 60px;
+                padding: 26px 20px 23px 20px;
+                &:before {
+                    left: 46%;
+                }
+                &-quotes {
+                    margin-right: 0;
+                    margin-bottom: 7px;
+                    svg{
+                        width: 44px;
+                        height: 35.5px;
+                    }
+                }
+            }
+        }
+        &-pagination {
+            bottom: 46px;
+        }
+    }
+    .reviews-content-boxclient {
+        width: 100%;
+        justify-content: space-around;
+        &-client {
+            &:nth-child(n+4){
+                display: none;
+            }
+            &-container {
+                &-gradient{
+                    margin-bottom: 9px;
+                    border-radius: 50%;
+                    &_img{
+                        width: 85px;
+                        height: 85px;
+                        border-radius: 50%;
+                    }
+                }
+                &-content {
+                   p:first-child{
+                    word-wrap: break-word;
+                    width: 87px;
+                    margin: 0 auto 5px;
+                    } 
+                    p:last-child{
+                        word-wrap: break-word;
+                        width: 87px;
+                        margin: 0 auto;
+                    } 
+                }
+                &-pagination {
+                    bottom: 50px;
+                }
+            }
+        }
+    }
+    
+    /* 4-блок Опыт */
+    .practice {
+        flex-direction: column;
+        padding-bottom: $padding-bottom-section-mob;
+        &-img {
+            display: none;
+        }
+        &-content {
+            h2 {
+                text-align: center;
+                margin: 0 auto 37px;
+            }
+            &-blok {
+                flex-direction: column;
+                &-col {
+                    margin-left: 0;
+                    &-item {
+                        min-height: 129px;
+                        &:last-child{
+                            min-height: 102px;
+                        }
+                        &-svg{
+                            display: flex;
+                            align-items: center;
+                            width: 29%;
+                            height: 100px;
+                        }
+                        &-content {
+                            width: 71%;
+                            p:first-child{
+                            font-size: 36px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+/* end */    
+}

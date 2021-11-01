@@ -1,0 +1,108 @@
+@media (max-width: 480px) {
+
+    .main-header-menu-wrp-link{
+        position: relative;
+        &:after{
+            display: none;
+        }
+    }  
+
+    /* футер */
+.footer-main-content{
+    &-sociallinks {
+        margin-left: 5px;
+        margin-bottom: 12px;
+        a {
+            margin-left: 8px;
+            padding: 0 5px 0 5px;
+        }  
+        &-inst {
+            width: 21px;
+            height: 24px;
+            }
+        &-vk {
+            width: 30px;
+            height: 25px;
+        }        
+    }
+}
+    
+/* главная */
+.practice{
+    &-svg1{
+        width: 92%;
+        height: 53%;
+    }
+
+    &-svg2{
+        width: 92%;
+        height: 53%;
+    }
+    &-svg3{
+        width: 92%;
+        height: 53%;
+    }
+    &-svg4{
+        width: 92%;
+        height: 53%;
+        margin-top: -42px;
+    }
+}
+
+/* вопросы */
+.skills{
+    &-svg1{
+        fill: $blue;
+        height: 72%;
+        width: 64%;
+        margin-left: 12px;
+        margin-top: -7px;
+    }
+
+    &-svg2{
+        fill: $blue;
+        height: 65%;
+        width: 40%;
+        margin-top: 10px;
+        margin-left: 27px;
+    }
+    &-svg3{
+        fill: $blue;
+        height: 45%;
+        width: 88%;
+        margin-top: 4px;
+    }
+    &-svg4{
+        fill: $blue;
+        height: 50%;
+        width: 87%;
+        margin-top: 9px;
+    }
+}
+
+/* контакты */
+.contacts{
+    &-svg1{
+        height: 168%;
+        width: 54%;
+        padding-left: 14px;
+    }
+    &-svg2{
+        height: 164%;
+        width: 55%;
+        padding-left: 12px;
+    }
+    &-svg3{
+        height: 162%;
+        width: 55%;
+        padding-left: 12px;
+    }
+    &-svg4{
+        height: 134%;
+        width: 55%;
+        padding-left: 12px;
+        
+    }
+}
+
+}
