@@ -10,7 +10,7 @@
             <a href="#" class="top-header-content-logocont-logo"><img src="/img/logo-mob.svg" alt="logo"></a>
           </div>
           <div class="top-header-content-contacts">
-            <a class="top-header-content-contacts-phone">
+            <a class="top-header-content-contacts-phone" href="tel: +7 (3456) 27 10 27">
               <svg class="practicesvg top-header-contacts-phone-svg" xmlns="http://www.w3.org/2000/svg" width="23.729" height="23.729" viewBox=" 0 0 23.729 23.729">
                 <path d="M25.41 18.575a14.976 14.976 0 0 1-4.706-.751 1.345 1.345 0 0 0-1.345.316l-2.9 2.9a19.834 19.834 0 0 1-8.687-8.687l2.9-2.913A1.266 1.266 0 0 0 11 8.121a14.976 14.976 0 0 1-.751-4.706A1.322 1.322 0 0 0 8.932 2.1H4.318A1.322 1.322 0 0 0 3 3.415a22.408 22.408 0 0 0 22.41 22.41 1.322 1.322 0 0 0 1.318-1.318v-4.614a1.322 1.322 0 0 0-1.318-1.318z" transform="translate(-3 -2.097)" />
               </svg>

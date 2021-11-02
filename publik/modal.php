@@ -1,0 +1,1 @@
+<div class="modal__add hide">test</div>

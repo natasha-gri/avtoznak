@@ -35,4 +35,9 @@
         </div>
     </section>
 </footer>
+
+<script src="/js/slider/mob-slider.js"></script>
+<script src="/js/menu/menu-naw.js"></script>
+<script src="/js/button-ripple/ripple.js"></script>
+<script src="/js/pagecontroller/pagecontroller.js"></script>
 </html>

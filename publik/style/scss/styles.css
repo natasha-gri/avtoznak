@@ -123,6 +123,7 @@ select {
       transform: scale(0.9);
     }
   }
+  
 /* Прижать футер 1 */
 html,
 body {
@@ -2389,4 +2390,4 @@ footer {
           display: inline-block;
           width: 61px; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

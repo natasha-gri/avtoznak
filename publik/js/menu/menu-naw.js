@@ -50,28 +50,30 @@ function someFunc() {
 	
   };
 
-window.onload = () => {
+const loadMenu = () => {
   	let menu1 = document.getElementById('mainMenu2');
   	let arr = []
 
-  	arr.push(new MenuItem('/index.php', 'main-header-menu-wrp-link', '/img/icons/home.svg', 'Home')) 
-  	arr.push(new MenuItem('/index.php', 'main-header-menu-wrp-link', '/img/icons/star.svg', 'почему мы'))
-  	arr.push(new MenuItem('/pages/services.php', 'main-header-menu-wrp-link', '/img/icons/handshake1.svg', 'услуги'))
+  	arr.push(new MenuItem('#main', 'main-header-menu-wrp-link ripple light', '/img/icons/home.svg', 'Home')) 
+  	arr.push(new MenuItem('#main', 'main-header-menu-wrp-link ripple light', '/img/icons/star.svg', 'почему мы'))
+  	arr.push(new MenuItem('#services', 'main-header-menu-wrp-link ripple light', '/img/icons/handshake1.svg', 'услуги'))
 
   	if(someFunc())
   	arr.push(new Btn('#', 'main-header-button ripple light', '/img/icons/phone-arrow.svg', 'заказать звонок'))
 	
-	arr.push(new MenuItem('/pages/questions.php', 'main-header-menu-wrp-link', '/img/icons/question.svg', 'вопросы'))
-	arr.push(new MenuItem('/pages/contacts.php', 'main-header-menu-wrp-link', '/img/icons/map-small.svg', 'контакты'))
+	arr.push(new MenuItem('#questions', 'main-header-menu-wrp-link ripple light', '/img/icons/question.svg', 'вопросы'))
+	arr.push(new MenuItem('#contacts', 'main-header-menu-wrp-link ripple light', '/img/icons/map-small.svg', 'контакты'))
 	/* arr.push(new MenuItem('/pages-mob/contacts-mob.html', 'main-header-menu-wrp-link', '/img/icons/map-small.svg', 'мобилка')) */
 
 	if(!someFunc()){
-		arr.push(new Btn('#', 'main-header-button ripple light', '/img/icons/phone-arrow.svg', 'заказать звонок'))
+		arr.push(new Btn('#', 'main-header-button add__ad ripple light', '/img/icons/phone-arrow.svg', 'заказать звонок'))
 	
 	}
   		  
 	let menu = new Menu('main-header-wrp', 'main-header-menu-wrp', arr);
+	
 	menu1.innerHTML = menu.render();
+	console.log(menu1)
 }
 
 

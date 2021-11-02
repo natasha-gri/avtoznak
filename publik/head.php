@@ -6,7 +6,5 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/style/css/style.css">
-  <script defer src="js/menu/menu-naw.js"></script>
-  <script defer src="js/slider/mob-slider.js"></script>
-  <script defer src="js/button-ripple/ripple.js"></script>
+
 </head>

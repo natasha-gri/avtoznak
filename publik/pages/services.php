@@ -1,6 +1,3 @@
-<?php require 'head-peges.php' ?>  
-<?php require '../header.php' ?>  
-
   <main>
       <!-- 1 блок -->
       <section>
@@ -110,10 +107,9 @@
                           <label class="main-text" for="namber">Или оставьте номер телефона, мы с вами свяжемся</label>
                           <input сlass="" id="namber" type="text"  placeholder="введите ваше имя">
                           <a href="#" class="btn ripple light button-txt">вызвать эвакуатор</a>
+                          
                       </div>
                   </form>
               </div>
       </section>
   </main>
-
-<?php require '../footer.php' ?>

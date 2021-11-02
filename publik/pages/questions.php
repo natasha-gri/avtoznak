@@ -1,6 +1,3 @@
-<?php require 'head-peges.php' ?>   
-<?php require '../header.php' ?>
-
   <main>
       <!-- 1 блок -->
       <section>
@@ -186,4 +183,3 @@
       </section>
   </main>
 
-<?php require '../footer.php' ?>

@@ -2,6 +2,7 @@ document.body.addEventListener("mousedown", function (event) {
   var target = event.target;
 
   while (target) {
+    
     if (!target.classList || !target.classList.contains("ripple")) {
       target = target.parentNode;
     } else {
@@ -55,6 +56,7 @@ document.body.addEventListener("mousedown", function (event) {
       ((window.pageYOffset || document.scrollTop) - (document.clientTop || 0) ||
         0) +
       "px";
+    rippleContainer.style.zIndex = 15;
     rippleContainer.style.width = width + "px";
     rippleContainer.style.height = height + "px";
     rippleContainer.style.borderTopLeftRadius = style.borderTopLeftRadius;
