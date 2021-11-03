@@ -32,6 +32,9 @@
                         </svg></a>
                 </div>
             </div>
+            <div class="footer-main-content container">
+            <p style="padding-top: 2rem;color: #fff;    font-family: Montserrat;">Сделано с <span style="color: red;">❤</span> в <a style="color: #fff;" href="https://it-72.ru">eXpert</a></p>
+            </div>
         </div>
     </section>
 </footer>
@@ -40,4 +43,5 @@
 <script src="/js/menu/menu-naw.js"></script>
 <script src="/js/button-ripple/ripple.js"></script>
 <script src="/js/pagecontroller/pagecontroller.js"></script>
+<script src="//code-eu1.jivosite.com/widget/C1swc69RCb" async></script>
 </html>

@@ -54,4 +54,24 @@ const loadSlider = () => {
 
 		checkBtns();
 	}
+
+	document.querySelectorAll('.reviews-content-boxclient-client-container-gradient').forEach((element, index) => {
+			element.addEventListener('click', (e) => {
+					let currentRew = e.target.getAttribute("data-id")	;
+					console.log(e)	
+					document.querySelectorAll('.review-text').forEach((element, index) => {
+					if(currentRew == index){
+						element.classList.remove('hide')
+						document.querySelectorAll('.reviews-pagination-circle')[index].classList.add('reviews-pagination-circle-active')
+					}	
+					else {
+						element.classList.add('hide')
+						document.querySelectorAll('.reviews-pagination-circle')[index].classList.remove('reviews-pagination-circle-active')
+					}
+			
+				});
+		})
+	})
+	
+
 }

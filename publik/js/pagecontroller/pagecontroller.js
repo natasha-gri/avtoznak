@@ -1,7 +1,7 @@
 loadMenu()
 
 const getPage = page => {
-    
+    window.scrollTo(0, 0);
     const wrapp = document.getElementById('content');
     const loading = document.getElementById('loading')
     
@@ -21,6 +21,7 @@ const getPage = page => {
         } 
         }
     }
+    page == "" ? page = 'main' : page = page 
     request.open('Get', `/pages/${page}.php`);
     request.send();
 }

@@ -73,7 +73,6 @@ const loadMenu = () => {
 	let menu = new Menu('main-header-wrp', 'main-header-menu-wrp', arr);
 	
 	menu1.innerHTML = menu.render();
-	console.log(menu1)
 }
 
 

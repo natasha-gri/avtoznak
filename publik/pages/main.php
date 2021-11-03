@@ -107,10 +107,10 @@
                     </div>
                     <div class="reviews-content-bulet-content bulet-text">
                         <p class="review-text">Очень хорошая компания, грамотные ребята сидят. После ДТП, Все качественно сделали, доступно обьяснили. На осмотре Обнаружили повреждения которых я и ни заметил даже после мойки. Большое спасибо. Рекомендую!!!</p>
-                        <p class="review-text">Обращалась к ребятам для оформления ДТП, сделали все быстро и качественно, по высшему разряду!!! Так держать ребята!!! Буду вас советовать знакомым и друзьям!!!</p>
-                        <p class="review-text">Хочу сказать огромное спасибо вашему комиссару Ксении!!! Очень быстро разобралась в
+                        <p class="review-text hide">Обращалась к ребятам для оформления ДТП, сделали все быстро и качественно, по высшему разряду!!! Так держать ребята!!! Буду вас советовать знакомым и друзьям!!!</p>
+                        <p class="review-text hide">Хочу сказать огромное спасибо вашему комиссару Ксении!!! Очень быстро разобралась в
                         случившемся посоветовала все чётко и грамотно! Человек знает свое дело. Советую</p>
-                        <p class="review-text">Приехали на место ДТП просто реактивно, вежливые, грамотные. Подход к каждому клиенту
+                        <p class="review-text hide">Приехали на место ДТП просто реактивно, вежливые, грамотные. Подход к каждому клиенту
                         индивидуальный. У ребят реально очень нервная и сложная работа, не смотря на это они очень вежливо общаются. Что сейчас очень большая редкость. Особая благодарность, Александру. Подсказал как правильно заполнить документы, при осмотре не упустил не одного момента, все подробно объяснил что и для чего. Чувствуется доверия к такому человеку, и он его оправдал. Успехов вам! И терпения!</p>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                     <div class="reviews-content-boxclient-client">
                         <div class="reviews-content-boxclient-client-container">
                             <a class="reviews-content-boxclient-client-container-gradient">
-                                <div class="reviews-content-boxclient-client-container-gradient_img person1"></div>
+                                <div class="reviews-content-boxclient-client-container-gradient_img person1" data-id="0"></div>
                             </a>
                             <div class="reviews-content-boxclient-client-container-content">
                                 <p class="customer-name-accordion">Евгений Поспелов</p>
@@ -132,7 +132,7 @@
                     <div class="reviews-content-boxclient-client">
                         <div class="reviews-content-boxclient-client-container">
                             <a class="reviews-content-boxclient-client-container-gradient">
-                                <div class="reviews-content-boxclient-client-container-gradient_img person2"></div>
+                                <div class="reviews-content-boxclient-client-container-gradient_img person2" data-id="1"></div>
                             </a>
                             <div class="reviews-content-boxclient-client-container-content">
                                 <p class="customer-name-accordion">Дина Рахимова</p>
@@ -144,7 +144,7 @@
                     <div class="reviews-content-boxclient-client">
                         <div class="reviews-content-boxclient-client-container">
                             <a class="reviews-content-boxclient-client-container-gradient">
-                                <div class="reviews-content-boxclient-client-container-gradient_img person3"></div>
+                                <div class="reviews-content-boxclient-client-container-gradient_img person3" data-id="2"></div>
                             </a>
                             <div class="reviews-content-boxclient-client-container-content">
                                 <p class="customer-name-accordion">Елена Шаргина</p>
@@ -156,7 +156,7 @@
                     <div class="reviews-content-boxclient-client">
                         <div class="reviews-content-boxclient-client-container">
                             <a class="reviews-content-boxclient-client-container-gradient">
-                                <div class="reviews-content-boxclient-client-container-gradient_img person4"></div>
+                                <div class="reviews-content-boxclient-client-container-gradient_img person4" data-id="3"></div>
                             </a>
                             <div class="reviews-content-boxclient-client-container-content">
                                 <p class="customer-name-accordion">Ilia<br>Kalinin</p>
@@ -167,10 +167,10 @@
                 </div>
                 <!-- Пагинация -->
                 <div class="reviews-pagination">
-                    <a href="#" class="reviews-pagination-circle"></a>
-                    <a href="#" class="reviews-pagination-circle"></a>
-                    <a href="#" class="reviews-pagination-circle reviews-pagination-circle-active"></a>
-                    <a href="#" class="reviews-pagination-circle"></a>
+                    <p class="reviews-pagination-circle reviews-pagination-circle-active"></p>
+                    <p class="reviews-pagination-circle"></p>
+                    <p class="reviews-pagination-circle"></p>
+                    <p class="reviews-pagination-circle"></p>
                 </div>
             </div>
         </div>
