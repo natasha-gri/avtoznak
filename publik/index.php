@@ -5,5 +5,5 @@
 <div id="content"></div>
 
 
-<?php require 'modal.php' ?>
+<?php require 'modal.php'?>
 <?php require 'footer.php' ?>
